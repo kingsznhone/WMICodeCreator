@@ -19,3 +19,5 @@ It's a very useful tool when coding with WMI
 - Change target platform to x64.
 
 - Some code cleanning.
+
+- Add a cute app icon.
