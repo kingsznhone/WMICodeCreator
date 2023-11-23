@@ -5,8 +5,6 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMICodeCreator", "WMICodeCreator\WMICodeCreator.csproj", "{F919CF61-98E4-4EEE-A680-E1557F75C4BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMICodeCreator_NEO", "WMICodeCreator_NEO\WMICodeCreator_NEO.csproj", "{83E7D85F-9604-425D-98BA-2480C72E5A7F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F919CF61-98E4-4EEE-A680-E1557F75C4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F919CF61-98E4-4EEE-A680-E1557F75C4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F919CF61-98E4-4EEE-A680-E1557F75C4BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83E7D85F-9604-425D-98BA-2480C72E5A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83E7D85F-9604-425D-98BA-2480C72E5A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83E7D85F-9604-425D-98BA-2480C72E5A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83E7D85F-9604-425D-98BA-2480C72E5A7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
