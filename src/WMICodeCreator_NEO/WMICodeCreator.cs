@@ -116,7 +116,7 @@ namespace WMICodeCreatorTools
         private System.Windows.Forms.Button ExecuteMethodButton;
         private System.Windows.Forms.Label PropertyListLabel;
         private System.Windows.Forms.Label ScopeLabel;
-        private System.Windows.Forms.MainMenu MainMenu;
+        private System.Windows.Forms.MenuStrip MainMenu;
         private IContainer components;
         private System.Windows.Forms.ListBox KeyValueBox;
         private System.Windows.Forms.Label KeyValueLabel;
@@ -130,13 +130,13 @@ namespace WMICodeCreatorTools
         private System.Windows.Forms.ListBox PropertyList_event;
         private const int MAXINPARAMS = 20;
         private System.Windows.Forms.Label PollLabelEnd;
-        private System.Windows.Forms.MenuItem CSharpMenuItem;
-        private System.Windows.Forms.MenuItem VbNetMenuItem;
-        private System.Windows.Forms.MenuItem VbsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CSharpMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem VbNetMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem VbsMenuItem;
         private System.Windows.Forms.CheckBox Asynchronous;
-        private System.Windows.Forms.MenuItem LocalComputerMenu;
-        private System.Windows.Forms.MenuItem RemoteComputerMenu;
-        private System.Windows.Forms.MenuItem GroupRemoteComputerMenu;
+        private System.Windows.Forms.ToolStripMenuItem LocalComputerMenu;
+        private System.Windows.Forms.ToolStripMenuItem RemoteComputerMenu;
+        private System.Windows.Forms.ToolStripMenuItem GroupRemoteComputerMenu;
         private const int MAXQUERYCONDITIONS = 10;
         private System.Windows.Forms.Label GenerateCodeLabel2;
         private System.Windows.Forms.GroupBox CodeGroupBox;
@@ -148,15 +148,15 @@ namespace WMICodeCreatorTools
         private TargetComputerWindow TargetWindow;
         private System.Windows.Forms.Button ExecuteEventCodeButton;
         private System.Windows.Forms.Label InParamLabel;
-        private System.Windows.Forms.MenuItem ExitMenuItem;
-        private System.Windows.Forms.MenuItem FileMenuItem;
-        private System.Windows.Forms.MenuItem CodeLangMenuItem;
-        private System.Windows.Forms.MenuItem TargetComputerMenuItem;
-        private System.Windows.Forms.MenuItem HelpMenuItem;
-        private System.Windows.Forms.MenuItem QueryHelpMenuItem;
-        private System.Windows.Forms.MenuItem MethodHelpMenuItem;
-        private System.Windows.Forms.MenuItem EventHelpMenuItem;
-        private System.Windows.Forms.MenuItem BrowseHelpMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FileMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CodeLangMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TargetComputerMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HelpMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem QueryHelpMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MethodHelpMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EventHelpMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem BrowseHelpMenuItem;
         private System.Windows.Forms.TabPage QueryTab;
         private System.Windows.Forms.TabPage MethodTab;
         private System.Windows.Forms.TabPage EventTab;
@@ -321,22 +321,22 @@ namespace WMICodeCreatorTools
             this.BrowsePropertyList = new System.Windows.Forms.ListBox();
             this.BrowsePropertyButton = new System.Windows.Forms.Button();
             this.BrowsePropertyStatus = new System.Windows.Forms.Label();
-            this.MainMenu = new System.Windows.Forms.MainMenu(this.components);
-            this.FileMenuItem = new System.Windows.Forms.MenuItem();
-            this.ExitMenuItem = new System.Windows.Forms.MenuItem();
-            this.CodeLangMenuItem = new System.Windows.Forms.MenuItem();
-            this.CSharpMenuItem = new System.Windows.Forms.MenuItem();
-            this.VbNetMenuItem = new System.Windows.Forms.MenuItem();
-            this.VbsMenuItem = new System.Windows.Forms.MenuItem();
-            this.TargetComputerMenuItem = new System.Windows.Forms.MenuItem();
-            this.LocalComputerMenu = new System.Windows.Forms.MenuItem();
-            this.RemoteComputerMenu = new System.Windows.Forms.MenuItem();
-            this.GroupRemoteComputerMenu = new System.Windows.Forms.MenuItem();
-            this.HelpMenuItem = new System.Windows.Forms.MenuItem();
-            this.QueryHelpMenuItem = new System.Windows.Forms.MenuItem();
-            this.MethodHelpMenuItem = new System.Windows.Forms.MenuItem();
-            this.EventHelpMenuItem = new System.Windows.Forms.MenuItem();
-            this.BrowseHelpMenuItem = new System.Windows.Forms.MenuItem();
+            this.MainMenu = new System.Windows.Forms.MenuStrip();
+            this.FileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CodeLangMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CSharpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.VbNetMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.VbsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TargetComputerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LocalComputerMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.RemoteComputerMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.GroupRemoteComputerMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.QueryHelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MethodHelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EventHelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BrowseHelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainTabControl.SuspendLayout();
             this.QueryTab.SuspendLayout();
             this.CodeGroupBox.SuspendLayout();
@@ -1318,7 +1318,7 @@ namespace WMICodeCreatorTools
             // 
             // MainMenu
             // 
-            this.MainMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripMenuItem[] {
             this.FileMenuItem,
             this.CodeLangMenuItem,
             this.TargetComputerMenuItem,
@@ -1326,21 +1326,18 @@ namespace WMICodeCreatorTools
             // 
             // FileMenuItem
             // 
-            this.FileMenuItem.Index = 0;
-            this.FileMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.FileMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripMenuItem[] {
             this.ExitMenuItem});
             this.FileMenuItem.Text = "File";
             // 
             // ExitMenuItem
             // 
-            this.ExitMenuItem.Index = 0;
             this.ExitMenuItem.Text = "Exit";
             this.ExitMenuItem.Click += new System.EventHandler(this.ExitMenuItem_Click);
             // 
             // CodeLangMenuItem
             // 
-            this.CodeLangMenuItem.Index = 1;
-            this.CodeLangMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.CodeLangMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripMenuItem[] {
             this.CSharpMenuItem,
             this.VbNetMenuItem,
             this.VbsMenuItem});
@@ -1349,26 +1346,22 @@ namespace WMICodeCreatorTools
             // CSharpMenuItem
             // 
             this.CSharpMenuItem.Checked = true;
-            this.CSharpMenuItem.Index = 0;
             this.CSharpMenuItem.Text = "C#";
             this.CSharpMenuItem.Click += new System.EventHandler(this.CSharpMenuItem_Click);
             // 
             // VbNetMenuItem
             // 
-            this.VbNetMenuItem.Index = 1;
             this.VbNetMenuItem.Text = "Visual Basic .NET";
             this.VbNetMenuItem.Click += new System.EventHandler(this.VbNetMenuItem_Click);
             // 
             // VbsMenuItem
             // 
-            this.VbsMenuItem.Index = 2;
             this.VbsMenuItem.Text = "Visual Basic Script";
             this.VbsMenuItem.Click += new System.EventHandler(this.VbsMenuItem_Click);
             // 
             // TargetComputerMenuItem
             // 
-            this.TargetComputerMenuItem.Index = 2;
-            this.TargetComputerMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.TargetComputerMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripMenuItem[] {
             this.LocalComputerMenu,
             this.RemoteComputerMenu,
             this.GroupRemoteComputerMenu});
@@ -1377,26 +1370,22 @@ namespace WMICodeCreatorTools
             // LocalComputerMenu
             // 
             this.LocalComputerMenu.Checked = true;
-            this.LocalComputerMenu.Index = 0;
             this.LocalComputerMenu.Text = "Local Computer";
             this.LocalComputerMenu.Click += new System.EventHandler(this.LocalComputerMenu_Click);
             // 
             // RemoteComputerMenu
             // 
-            this.RemoteComputerMenu.Index = 1;
             this.RemoteComputerMenu.Text = "Remote Computer";
             this.RemoteComputerMenu.Click += new System.EventHandler(this.RemoteComputerMenu_Click);
             // 
             // GroupRemoteComputerMenu
             // 
-            this.GroupRemoteComputerMenu.Index = 2;
             this.GroupRemoteComputerMenu.Text = "Group of Remote Computers";
             this.GroupRemoteComputerMenu.Click += new System.EventHandler(this.GroupRemoteComputerMenu_Click);
             // 
             // HelpMenuItem
             // 
-            this.HelpMenuItem.Index = 3;
-            this.HelpMenuItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.HelpMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripMenuItem[] {
             this.QueryHelpMenuItem,
             this.MethodHelpMenuItem,
             this.EventHelpMenuItem,
@@ -1405,25 +1394,21 @@ namespace WMICodeCreatorTools
             // 
             // QueryHelpMenuItem
             // 
-            this.QueryHelpMenuItem.Index = 0;
             this.QueryHelpMenuItem.Text = "Querying for WMI data";
             this.QueryHelpMenuItem.Click += new System.EventHandler(this.QueryHelpMenuItem_Click);
             // 
             // MethodHelpMenuItem
             // 
-            this.MethodHelpMenuItem.Index = 1;
             this.MethodHelpMenuItem.Text = "Executing a method in WMI";
             this.MethodHelpMenuItem.Click += new System.EventHandler(this.MethodHelpMenuItem_Click);
             // 
             // EventHelpMenuItem
             // 
-            this.EventHelpMenuItem.Index = 2;
             this.EventHelpMenuItem.Text = "Receiving an event";
             this.EventHelpMenuItem.Click += new System.EventHandler(this.EventHelpMenuItem_Click);
             // 
             // BrowseHelpMenuItem
             // 
-            this.BrowseHelpMenuItem.Index = 3;
             this.BrowseHelpMenuItem.Text = "Browsing WMI namespaces";
             this.BrowseHelpMenuItem.Click += new System.EventHandler(this.BrowseHelpMenuItem_Click);
             // 
@@ -1435,7 +1420,8 @@ namespace WMICodeCreatorTools
             this.ClientSize = new System.Drawing.Size(1258, 633);
             this.Controls.Add(this.MainTabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Menu = this.MainMenu;
+            MainMenu.Dock = DockStyle.Top;
+            this.MainMenuStrip = this.MainMenu;
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "WMICodeCreator";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1457,6 +1443,7 @@ namespace WMICodeCreatorTools
             this.BrowseTab.ResumeLayout(false);
             this.BrowseTab.PerformLayout();
             this.ResumeLayout(false);
+            this.Controls.Add(MainMenu) ;
 
         }
 
