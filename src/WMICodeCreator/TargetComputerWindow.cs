@@ -306,6 +306,5 @@ namespace WMICodeCreatorTools
                 return this.remoteComputerDomainBox.Text;
             }
         }
-
     }
 }

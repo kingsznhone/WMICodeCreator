@@ -331,6 +331,5 @@ namespace WMICodeCreatorTools
                 this.ParameterName = inputName;
             }
         }
-
     }
 }
